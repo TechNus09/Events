@@ -1,1 +1,1 @@
-not with fun events for discord servers
+bot with fun events for discord servers
