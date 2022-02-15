@@ -19,7 +19,7 @@ async def help(ctx):
 @bot.command()
 async def vote(ctx):
     member = ctx.author
-    m_channel = member.create_dm()
+    m_channel = await member.create_dm()
     await m_channel.send("test")
 
 bot.run(os.environ.get("TOKEN"))
