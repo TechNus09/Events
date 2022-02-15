@@ -1,2 +1,1 @@
-# Guilds-v3
-enhanced version of Guilds-v2
+not with fun events for discord servers
