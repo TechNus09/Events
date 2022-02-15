@@ -23,7 +23,9 @@ async def vote(ctx):
     member = ctx.author
     m_channel = await member.create_dm()
     await m_channel.send("test")
-    em = d.embed(title="Test",description="test",color=0x0000FF)
+    em = d.Embed(title="Test",description="test",color=0x0000FF)
     await m_channel.send(embed=em)
+    e = d.Embed(title="Click The Button To Invite Me", color=0x00ff00)
+    inv = await m_channel.send(embeds=[e],components=[Button(style=ButtonStyle.URL, label="Invite Me !", url=invite_url)])
 
 bot.run(os.environ.get("TOKEN"))
