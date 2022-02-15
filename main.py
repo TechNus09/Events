@@ -13,11 +13,13 @@ async def on_ready():
 
 @bot.command()
 async def help(ctx):
-    await ctx.send("Use '$youtube [link] [mp3/mp4]' . Just make sure the embed isn't hidden!")
+    await ctx.send("+join : register yourself \n+vote : to vote")
 
 
 @bot.command()
 async def vote(ctx):
-    
+    member = ctx.author
+    m_channel = member.create_dm()
+    await m_channel.send("test")
 
 bot.run(os.environ.get("TOKEN"))
