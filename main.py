@@ -26,7 +26,7 @@ async def vote(ctx):
     em = d.Embed(title="Test",description="test",color=0x0000FF)
     await m_channel.send(embed=em)
     e = d.Embed(title="Click The Button To Invite Me", color=0x00ff00)
-    m_URL = "www.google.com"
+    m_url = "www.google.com"
     inv = await m_channel.send(embeds=[e],components=[Button(style=ButtonStyle.URL, label="Invite Me !", url=m_url)])
 
 bot.run(os.environ.get("TOKEN"))
