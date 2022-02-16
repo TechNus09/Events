@@ -1,5 +1,6 @@
 import psycopg2
 from psycopg2 import Error
+import os
 
 
 db_user = os.environ.get("DB_USER")
