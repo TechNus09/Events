@@ -4,6 +4,8 @@ import os
 from discord.ext import commands
 from discord_components import Button, Select, SelectOption, ComponentsBot, ButtonStyle
 import math
+import psycopg2
+from db_helper import checkT, createT
 
 bot = ComponentsBot('$')
 
@@ -16,6 +18,20 @@ async def on_ready():
 @bot.command()
 async def help(ctx):
     await ctx.send("+join : register yourself \n+vote : to vote")
+
+@bot.command()
+async def created(ctx,table_name):
+    table= table_name
+    check = checkT(table)
+    if check :
+        ctx.send(f"{table} Created")
+    else:
+        ctx.send(f"{table} Already Existing ")
+
+
+
+
+
 
 
 @bot.command()
