@@ -22,20 +22,20 @@ async def help(ctx):
 @bot.command()
 async def create(ctx,table_name):
     table= table_name
-    check = checkT(table)
+    await check = checkT(table)
     if check :
-        ctx.send(f"{table} Created")
+        await ctx.send(f"{table} Created")
     else:
-        ctx.send(f"{table} Already Existing ")
+        await ctx.send(f"{table} Already Existing ")
 
 @bot.command()
 async def createV(ctx):
     
-    c = createT()
+    await c = createT()
     if c :
-        ctx.send(f"Created")
+        await ctx.send(f"Created")
     else:
-        ctx.send(f"Already Existing ")
+        await ctx.send(f"Already Existing ")
 
 
 
