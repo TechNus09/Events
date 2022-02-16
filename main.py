@@ -28,6 +28,17 @@ async def create(ctx,table_name):
     else:
         ctx.send(f"{table} Already Existing ")
 
+@bot.command()
+async def createV(ctx):
+    
+    c = checkT(table)
+    if c :
+        ctx.send(f"Created")
+    else:
+        ctx.send(f"Already Existing ")
+
+
+
 
 
 
