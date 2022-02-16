@@ -39,7 +39,7 @@ def createT():
             print("PostgreSQL connection is closed")
             return True
         else:
-            return false
+            return False
 #################################################################################
 def checkT(table_name):
     table = table_name
@@ -69,7 +69,7 @@ def checkT(table_name):
             print("PostgreSQL connection is closed")
             return True
         else:
-            return false
+            return False
 
 #################################################################################
 
