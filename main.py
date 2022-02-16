@@ -31,7 +31,7 @@ async def create(ctx,table_name):
 @bot.command()
 async def createV(ctx):
     
-    c = checkT(table)
+    c = createT()
     if c :
         ctx.send(f"Created")
     else:
