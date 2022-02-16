@@ -20,7 +20,7 @@ async def help(ctx):
     await ctx.send("+join : register yourself \n+vote : to vote")
 
 @bot.command()
-async def created(ctx,table_name):
+async def create(ctx,table_name):
     table= table_name
     check = checkT(table)
     if check :
