@@ -52,9 +52,9 @@ def checkT(table_name):
                                      )
         cursor = connection.cursor()
         # SQL query to check table exist
-        cursor.execute(f"SELECT EXISTS(SELECT relname 
+        cursor.execute(f"""SELECT EXISTS(SELECT relname 
                                        FROM pg_class
-                                       WHERE relname = {table});")
+                                       WHERE relname = {table});""")
         
         
     except (Exception, Error) as error:
